@@ -1,62 +1,98 @@
-body{
-    background-image: url(https://i.pinimg.com/474x/50/2a/06/502a06df5822e5339c2e4657a9494d27.jpg);
-    background-size: 100%;
-    background-repeat: no-repeat;
+body {
+    background: url(./bateau-lac-montagnes-arriere-plan_865967-5725.avif) no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
     
 }
-header {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 10px;
-}
-a {
-    text-decoration: none;
+
+.wrapper {
+    width: 420px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
     color: white;
+    border-radius: 10px;
+    padding: 30px 40px;
 }
-li {
-    list-style: none;
-    padding-left: 40px;
-    margin-top: 0px;
-}
-ul { 
-    margin-bottom: 70px;
-    gap: 10px;
-}
-h2 {
-    color: white;
-    margin-top: 15px;
-}
- li button {
-    border-radius: 30px;
-    border-color: white;
-    background: none;
-    color: white;
-    width: 100px;
-    height: 20px;
-}
-h1 {
-    color: white;
-    margin-left: 30px;
-    font-size: 70px;
-    margin-top: 10px;
+.wrapper h1 {
+   font-size: 36px; 
+   text-align: center;
+   color: purple;
 
 }
-p {
+
+.wrapper .input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px;
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 40px;
+    font-size: 16px;
     color: white;
-    margin-left: 30px;
+    padding: 20px 45px 20px 20px;
 }
-button {
-    border-radius: 30px;
-    background-size: cover;
-    color: black;
-    border-color: white;
-    width: 100px;
+
+.input-box input::placeholder {
+    color: white;
 }
-hr {
-    margin-right: 65%;
-    margin-left: 30px;
-    margin-top: 0%;
+
+.input-box i {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
 }
-@media only screen and (max-width: 650px) {
- 
+
+.wrapper .remember-forgot {
+    justify-content: center;
+    font-size: 15px;
+    margin: -15px 0 15px;
+}
+.wrapper .button {
+    width: 100%;
+    height: 45px;
+    background:white;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    color: purple;
+    font-weight: 600;
+}
+
+.wrapper .register-link {
+    font-size: 15px;
+    text-align: center;
+    margin: 20px 0 15px;
+}
+
+.register-link p a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.register-link p a:hover {
+    text-decoration: underline;
+    color: purple;
+}
+
+    
 }
